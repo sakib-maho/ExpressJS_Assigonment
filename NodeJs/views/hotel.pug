@@ -1,0 +1,719 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  link(rel='stylesheet' href='//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css')
+  link(rel='stylesheet' type='text/css' href='/map.css')
+  link(rel='stylesheet' href='/style.css')
+  link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+  script(src='/JavaScript/map.js')
+  script(src='https://polyfill.io/v3/polyfill.min.js?features=default')
+  style.
+    .navbarr {
+    overflow: hidden;
+    }
+    .navbarr a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    .dropdownn {
+    float: left;
+    overflow: hidden;
+    }
+    .dropdownn .dropbtnn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+    .dropdown-contentt {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+    .dropdown-contenttt {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    }
+    .dropdown-contentt a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    .dropdown-contenttt a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    .dropdown-contentt a:hover {
+    background-color: #ddd;
+    }
+    .dropdown-contenttt a:hover {
+    background-color: #ddd;
+    }
+    .dropdownn:hover .dropdown-contentt {
+    display: block;
+    }
+    .dropdownn:hover .dropdown-contenttt {
+    display: block;
+    }
+    .topnav-right {
+    float: right;
+    }
+    .has-searchh .form-controll {
+    padding-left: 1.375rem;
+    }
+    .has-searchh .form-control-feedbackk {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 1.40rem;
+    height: 2.0rem;
+    line-height: 2.20rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    }
+    .button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    .bottom-left {
+    position: absolute;
+    bottom: 200px;
+    left: 16px;
+    color: black;
+    background: rgba(255, 255, 255, 0.9);
+    }
+    .bottom-right {
+    position: absolute;
+    bottom: 202px;
+    right: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    }
+    .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    }
+    .btnnn {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: black;
+    padding: 4px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    width: 150px;
+    }
+    .button1 {
+    background-color: #f7941d;
+    }
+    .button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 140px;
+    height: 35px;
+    padding-left: -10px;
+    }
+    #slider-div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    }
+    #slider-div>div {
+    margin: 8px;
+    }
+    .slider-label {
+    position: absolute;
+    background-color: #eee;
+    padding: 4px;
+    font-size: 0.75rem;
+    }
+#hotel(style='position: relative;')
+  // Modal for Final Popup
+  #staticBackdrop2.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5#staticBackdropLabel2.modal-title Search Results
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+        .modal-body
+          h1#invalid_data Please, fillup all the Fields
+          #search_data
+            div(style='display: flex;')
+              span Search: 
+              p#search1(style='padding-left: 10px;')
+            div(style='display: flex;')
+              span Checkin: 
+              p#checkin(style='padding-left: 10px;')
+            div(style='display: flex;')
+              span Checkout: 
+              p#checkout(style='padding-left: 10px;')
+            div(style='display: flex;')
+              span Guests: 
+              p#guests(style='padding-left: 10px;')
+            div(style='display: flex;')
+              span Price range: 
+              p#priceRange(style='padding-left: 10px;')
+        .modal-footer
+          button.btn.btn-warning(type='button' data-bs-dismiss='modal') Close
+  // Modal for Guests
+  #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title Guests Number
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+        .modal-body
+          div(style='display: flex; justify-content: space-around;')
+            span(style='margin-top: 10px;') Guests
+            span
+              button.btn-light(type='button' onclick='deccrement()')
+                i.fas.fa-minus-circle.text-warning.fa-2x
+            span#guests_no(style='margin-top: 10px;') 0
+            span
+              button.btn-light(type='button' onclick='increment()')
+                i.fas.fa-plus-circle.text-warning.fa-2x
+        .modal-footer
+          button.btn.btn-warning(type='button' data-bs-dismiss='modal') Apply
+  // Modal for Price Range
+  #exampleModal1.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel1.modal-title Price Range
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+        .modal-body
+          .price-range-slider
+            p.range-value
+              input#amount(type='text' readonly='')
+            #slider-range.range-bar
+        .modal-footer
+          button.btn.btn-warning(onclick='priceshow()' type='button' data-bs-dismiss='modal') Apply
+  nav.d-sm-none.d-none.d-md-block
+    .navbarr
+      .dropdownn
+        button.dropbtnn
+          i.fa.fas.fa-bars
+        .dropdown-contentt
+          a(href='#') Home
+          a(href='#') Profile
+          a(href='#') Location
+      img(src='https://cdn-assets.bedroomvillas.com/vff/1.1.18-v2/images/logos/bedroomvillas-logo-new.png' width='auto' height='auto' alt='')
+      .topnav-right.d-sm-none.d-none.d-md-block(style='display: flex; flex-wrap: wrap;')
+        a(href='#search')
+          .form-groupp.has-searchh
+            span.fa.fa-search.form-control-feedbackk
+            input#search_input.form-controll(style='width: 140px; height: 35px;' type='text' placeholder='Arizona USA' onkeypress='myFunction()')
+        a(href='#about')
+          .form-groupp.has-searchh(style='display: flex;')
+            input#checkInDate.form-controll(style='width: 140px; height: 35px;' type='text' placeholder='Check In')
+            input#checkOutDate.form-controll(style='width: 140px; height: 35px;' type='text' placeholder='Check Out')
+            button.button.button2(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal')
+              i.fas.fa-users
+              span#guest_no Guests
+              i.fas.fa-chevron-down
+            button.button.button2(onclick='run()' type='button' data-bs-toggle='modal' data-bs-target='#exampleModal1')
+              span#price_range Price Range
+              i.fas.fa-chevron-down
+        span
+          a(href='#about')
+            button.button.button1(type='submit' onclick='showData()' data-bs-toggle='modal' data-bs-target='#staticBackdrop2') Search
+          a(style='padding-left: 000px;' href='#about')
+            button.button.button2(type='button' data-bs-toggle='modal' data-bs-target='') Filters
+  // This is a comment
+  nav.navi.navbar.navbar-dark.d-block.d-sm-block.d-md-none
+    div(style='display: flex; justify-content: space-between;')
+      img(src='https://cdn-assets.bedroomvillas.com/vff/1.1.18-v2/images/logos/bedroomvillas-logo-new.png' width='auto' height='auto' alt='')
+      .navbarr
+        .dropdownn
+          button.dropbtnn
+            i.fa.fas.fa-bars
+          .dropdown-contenttt
+            a(href='#') Home
+            a(href='#') Profile
+            a(href='#') Location
+  nav.navi.navbar.navbar-dark.bg-primary.d-block.d-sm-block.d-md-none
+    form.d-flex(style='justify-content: left;')
+      input.form-control.me-2.border.border-3.d-sm-block.d-block.d-md-none(style='width: 80px;' type='search' placeholder='Search' aria-label='Search')
+      input.form-control.me-2.border.border-3.d-sm-block.d-block.d-md-none(type='text' placeholder='In > Out' aria-label='Search')
+      form.d-flex
+        button#c.btn.d-block.d-sm-block.d-md-none(type='submit' style='background-color: #f7941d;color: white;') Search
+        button#c.btn.d-block.d-sm-block.d-md-none(data-bs-toggle='modal' data-bs-target='#exampleModal' type='submit' style='background-color: #364d6a;color: white;') Filters
+  // This is a comment
+  hr
+  div(style='display: flex; flex-wrap: wrap;')
+    span(style='padding-left: 15px;') Vacation Rentals in Arizona
+    span(style='padding-left: 15px; color: #ff7601;') |
+    span(style='padding-left: 15px; color: #ff7601;') USA
+    span(style='padding-left: 15px; color: #ff7601;')
+      i.fas.fa-greater-than
+    span(style='padding-left: 15px; color: #ff7601;') Arizona
+  hr
+  .container-fluid
+    .row.row-cols-1.row-cols-md-3.g-4(style='background:#f4f4f4;')
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://thumbs.dreamstime.com/b/hotel-lobby-luxury-staircases-fountain-39479289.jpg' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Coventina Lake Suites 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex; ')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px; font-family: Open Sans,sans-serif; font-size: 15px; ') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px;font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px; ')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px;font-size: 15px;') BC-367739
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://www.pommietravels.com/wp-content/uploads/2013/07/Shangri-La-Makati-Lobby.jpg' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Rafflesia Serviced Apartments 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px; font-family: Open Sans,sans-serif; font-size: 15px; ') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px; font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px;')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px; font-size: 15px;') BC-367739
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://thumbs.dreamstime.com/b/hotel-lobby-luxury-staircases-fountain-39479289.jpg' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Contemporary Heights Hotel 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px; font-family: Open Sans,sans-serif; font-size: 15px; ') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px;font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px;')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px; font-size: 15px;') BC-367739
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://media.istockphoto.com/photos/interior-of-a-modern-luxury-hotel-double-bed-bedroom-picture-id1163498940?k=20&m=1163498940&s=612x612&w=0&h=tUPidNW2ny095sCR97dur7cbrCnYpcjHbevUTJyB8Jc=' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Green House Guest House 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px; font-family: Open Sans,sans-serif; font-size: 15px;') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px;font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px;')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px; font-size: 15px;') BC-367739
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://thumbs.dreamstime.com/b/hotel-lobby-luxury-staircases-fountain-39479289.jpg' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Megher Chaya Resort 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px;font-family: Open Sans,sans-serif; font-size: 15px; ') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px;font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px;')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px; font-size: 15px;') BC-367739
+      .col(style='padding: 10px;')
+        .card.h-100
+          img.card-img-top(src='https://www.pommietravels.com/wp-content/uploads/2013/07/Shangri-La-Makati-Lobby.jpg' height='250')
+          .bottom-left
+            button.btn.btn-sm(type='button') From $200
+          .bottom-right
+            i.big.fa.fab.fa-gratipay.fa-lg
+          .top-right
+            button.btnnn
+              span More Photos
+              i.fas.fa-external-link-alt
+          .card-body
+            h5.card-title(style='font-family: Open Sans,sans-serif;') Impressa on Shah 
+            div(style='display: flex; justify-content: space-between;')
+              div(style='display: flex; flex-direction: column;')
+                div(style='display: flex; justify-content: space-between;')
+                  div(style='display: flex')
+                    span
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.fas.fa-star
+                      i.fa.far.fa-star
+                      span(style='padding-left: 5px; font-family: Open Sans,sans-serif; font-size: 15px;') 683 Reviews
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px;') Sleeps 85
+                span(style='font-family: Open Sans,sans-serif; font-size: 15px; color: blue;')
+                  | Arizona 
+                  i.fas.fa-greater-than
+                  |  Lake Havasu City
+                span(style='padding-top: 20px;font-family: Open Sans,sans-serif;font-size: 15px;')
+                  i.fa.far.fa-check
+                  | View
+                  i.fa.far.fa-check(style='padding-left: 10px;')
+                  | Child Friendly
+              div(style='display: flex; flex-direction: column;')
+                br
+                span
+                  button.btn.btn-sm(style='background:#f7941d; color: white;' type='button')
+                    | View
+                    | Details
+                br
+                span(style='padding-top: 56px; padding-left: 13px; font-size: 15px;') BC-367739
+    #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5#staticBackdropLabel.modal-title Modal title
+            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+          .modal-body
+            | ...
+          .modal-footer
+            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+            button.btn.btn-primary(type='button') Understood
+  //
+    <div class="text-center p-5" style="position: absolute; z-index: 1000; bottom: 30px; left: 90vh;">
+    <button onclick="hideHotel()" type="button" class="btn btn-success text-center">Success</button>
+    </div>
+.bg-light
+  .d-flex.justify-content-center.fixed-bottom.mb-3
+    button#mapButton.btn.btn-dark.rounded-pill(onclick='hideHotel()')
+      | Show Map &nbsp; 
+      i.fas.fa-map-marked-alt
+
+
+.w3-bar.w3-margin(style='display: flex; justify-content: center; align-items: center;')
+  button#celsius.w3-bar-item.w3-button.w3-yellow(onclick='show_celsius()' style='width:10%') Celsius
+  button#fahrenheit.w3-bar-item.w3-button.w3-blue(onclick='show_fahrenheit()' style='width:10%') Fahrenheit
+
+div(style='text-align: center;')
+  h2(style='background-color: #ffeb3b;')
+    | Weather In: 
+    span #{city} - #{country}
+
+
+#fahrenheit_div.p-5(style='display: none;' class='.container-sm')
+  .row.row-cols-1.row-cols-md-4.g-4
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-smog
+          p.card-text December - February
+          span
+            | High - 
+            span#High1 #{avr_maxtemp_f}&deg;F
+            span#low1(style='padding-left: 20px;')
+              | Low -
+              | #{avr_mintemp_f}&deg;F
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-snowflake
+          p.card-text March - May
+          span
+            | High - 
+            span#High2 #{avr_maxtemp_f}&deg;F
+            span#low2(style='padding-left: 20px;')
+              | Low -
+              | #{avr_mintemp_f}&deg;F
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.far.fa-sun
+          p.card-text June - August
+          span
+            | High - 
+            span#High3 #{avr_maxtemp_f}&deg;F
+            span#low3(style='padding-left: 20px;')
+              | Low -
+              | #{avr_mintemp_f}&deg;F
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-cloud-rain
+          p.card-text September - November
+          span
+            | High - 
+            span#High4 #{avr_maxtemp_f}&deg;F
+            span#low4(style='padding-left: 20px;')
+              | Low -
+              | #{avr_mintemp_f}&deg;F
+
+
+
+
+#celsius_div.p-5(class='.container-sm')
+  .row.row-cols-1.row-cols-md-4.g-4
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-smog
+          p.card-text December - February
+          span
+            | High - 
+            span#High1 #{avr_maxtemp_c}&deg;C
+            span#low1(style='padding-left: 20px;') Low - #{avr_mintemp_c}&deg;C
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-snowflake
+          p.card-text March - May
+          span
+            | High - 
+            span#High2 #{avr_maxtemp_c}&deg;C
+            span#low2(style='padding-left: 20px;') Low - #{avr_mintemp_c}&deg;C
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.far.fa-sun
+          p.card-text June - August
+          span
+            | High - 
+            span#High3 #{avr_maxtemp_c}&deg;C
+            span#low3(style='padding-left: 20px;') Low - #{avr_mintemp_c}&deg;C
+    .col
+      .card
+        // <img src="..." class="card-img-top" alt="...">
+        .card-body
+          h5.card-title
+            i.fas.fa-cloud-rain
+          p.card-text September - November
+          span
+            | High - 
+            span#High4 #{avr_maxtemp_c}&deg;C
+            span#low4(style='padding-left: 20px;') Low - #{avr_mintemp_c}&deg;C
+// <button id="mapbtn" style="display: none;">jkbjkghjkghj</button>
+#map(style='display: none;')
+script.
+  function show_celsius(){
+  document.getElementById("fahrenheit_div").style.display = 'none';
+  document.getElementById("celsius_div").style.display = 'block';
+  }
+  function show_fahrenheit(){
+  document.getElementById("fahrenheit_div").style.display = 'block';
+  document.getElementById("celsius_div").style.display = 'none';
+  }  
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous')
+script(src='https://code.jquery.com/jquery-3.6.0.js')
+script(src='https://code.jquery.com/ui/1.13.0/jquery-ui.js')
+// <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArTUpPxK58U3xCnOuoFYGMtLfce4S0Ok4&libraries=places"></script>
+script(src='https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyArTUpPxK58U3xCnOuoFYGMtLfce4S0Ok4')
+//
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArTUpPxK58U3xCnOuoFYGMtLfce4S0Ok4&callback=initMap&v=weekly"
+  async></script>
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyArTUpPxK58U3xCnOuoFYGMtLfce4S0Ok4&libraries=places&callback=initMap' async='')
+script(src='/JavaScript/date.js')
+script(src='/JavaScript/search.js')
+script(src='/JavaScript/search_data.js')
+script(src='/JavaScript/guest.js')
+script(src='/JavaScript/mapShow.js')
+script(src='/JavaScript/priceshow.js')
+script.
+  $(function () {
+  $("#slider-range").slider({
+  range: true,
+  min: 130,
+  max: 500,
+  values: [130, 250],
+  slide: function (event, ui) {
+  $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+  }
+  });
+  $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+  " - $" + $("#slider-range").slider("values", 1));
+  });

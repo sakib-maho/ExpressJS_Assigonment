@@ -1,0 +1,692 @@
+{
+  "Dhaka": {
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "avr_maxtemp_c": 32,
+    "avr_maxtemp_f": 90,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 66,
+    "avr_avgtemp_c": 25,
+    "avr_avgtemp_f": 76
+  },
+  "Toronto": {
+    "country": "Canada",
+    "city": "Toronto",
+    "avr_maxtemp_c": 3,
+    "avr_maxtemp_f": 37,
+    "avr_mintemp_c": -1,
+    "avr_mintemp_f": 29,
+    "avr_avgtemp_c": 1,
+    "avr_avgtemp_f": 33
+  },
+  "London": {
+    "country": "United Kingdom",
+    "city": "London",
+    "avr_maxtemp_c": 8,
+    "avr_maxtemp_f": 46,
+    "avr_mintemp_c": 3,
+    "avr_mintemp_f": 38,
+    "avr_avgtemp_c": 6,
+    "avr_avgtemp_f": 43
+  },
+  "Karachi": {
+    "country": "Pakistan",
+    "city": "Karachi",
+    "avr_maxtemp_c": 33,
+    "avr_maxtemp_f": 91,
+    "avr_mintemp_c": 22,
+    "avr_mintemp_f": 72,
+    "avr_avgtemp_c": 27,
+    "avr_avgtemp_f": 80
+  },
+  "Delhi": {
+    "country": "India",
+    "city": "Delhi",
+    "avr_maxtemp_c": 28,
+    "avr_maxtemp_f": 82,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 64,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Khulna": {
+    "country": "Bangladesh",
+    "city": "Khulna",
+    "avr_maxtemp_c": 30,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Oslo": {
+    "country": "Norway",
+    "city": "Oslo",
+    "avr_maxtemp_c": -6,
+    "avr_maxtemp_f": 21,
+    "avr_mintemp_c": -9,
+    "avr_mintemp_f": 15,
+    "avr_avgtemp_c": -8,
+    "avr_avgtemp_f": 18
+  },
+  "Beijing": {
+    "country": "China",
+    "city": "Beijing",
+    "avr_maxtemp_c": 10,
+    "avr_maxtemp_f": 50,
+    "avr_mintemp_c": 2,
+    "avr_mintemp_f": 35,
+    "avr_avgtemp_c": 5,
+    "avr_avgtemp_f": 42
+  },
+  "Saidpur": {
+    "country": "India",
+    "city": "Saidpur",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 15,
+    "avr_mintemp_f": 60,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 66
+  },
+  "Barisal": {
+    "country": "Bangladesh",
+    "city": "Barisal",
+    "avr_maxtemp_c": 32,
+    "avr_maxtemp_f": 89,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 64,
+    "avr_avgtemp_c": 24,
+    "avr_avgtemp_f": 75
+  },
+  "Stockholm": {
+    "country": "Sweden",
+    "city": "Stockholm",
+    "avr_maxtemp_c": -3,
+    "avr_maxtemp_f": 26,
+    "avr_mintemp_c": -6,
+    "avr_mintemp_f": 20,
+    "avr_avgtemp_c": -5,
+    "avr_avgtemp_f": 23
+  },
+  "Sydney": {
+    "country": "Australia",
+    "city": "Sydney",
+    "avr_maxtemp_c": 21,
+    "avr_maxtemp_f": 69,
+    "avr_mintemp_c": 17,
+    "avr_mintemp_f": 63,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 67
+  },
+  "Jakarta": {
+    "country": "Indonesia",
+    "city": "Jakarta",
+    "avr_maxtemp_c": 32,
+    "avr_maxtemp_f": 89,
+    "avr_mintemp_c": 25,
+    "avr_mintemp_f": 77,
+    "avr_avgtemp_c": 28,
+    "avr_avgtemp_f": 82
+  },
+  "Wellington": {
+    "country": "New Zealand",
+    "city": "Wellington",
+    "avr_maxtemp_c": 17,
+    "avr_maxtemp_f": 63,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 56,
+    "avr_avgtemp_c": 15,
+    "avr_avgtemp_f": 60
+  },
+  "Osaka-Shi": {
+    "country": "Japan",
+    "city": "Osaka-Shi",
+    "avr_maxtemp_c": 12,
+    "avr_maxtemp_f": 54,
+    "avr_mintemp_c": 6,
+    "avr_mintemp_f": 44,
+    "avr_avgtemp_c": 10,
+    "avr_avgtemp_f": 50
+  },
+  "Virginia Beach": {
+    "country": "United States of America",
+    "city": "Virginia Beach",
+    "avr_maxtemp_c": 16,
+    "avr_maxtemp_f": 60,
+    "avr_mintemp_c": 6,
+    "avr_mintemp_f": 43,
+    "avr_avgtemp_c": 11,
+    "avr_avgtemp_f": 51
+  },
+  "Madrid": {
+    "country": "Spain",
+    "city": "Madrid",
+    "avr_maxtemp_c": 12,
+    "avr_maxtemp_f": 54,
+    "avr_mintemp_c": 5,
+    "avr_mintemp_f": 41,
+    "avr_avgtemp_c": 8,
+    "avr_avgtemp_f": 46
+  },
+  "Austin": {
+    "country": "United States of America",
+    "city": "Austin",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 11,
+    "avr_mintemp_f": 52,
+    "avr_avgtemp_c": 16,
+    "avr_avgtemp_f": 61
+  },
+  "Dallas": {
+    "country": "United States of America",
+    "city": "Dallas",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 12,
+    "avr_mintemp_f": 54,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 62
+  },
+  "Arlington": {
+    "country": "United States of America",
+    "city": "Arlington",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 12,
+    "avr_mintemp_f": 54,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 62
+  },
+  "Waco": {
+    "country": "United States of America",
+    "city": "Waco",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 11,
+    "avr_mintemp_f": 51,
+    "avr_avgtemp_c": 16,
+    "avr_avgtemp_f": 60
+  },
+  "Plano": {
+    "country": "United States of America",
+    "city": "Plano",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 12,
+    "avr_mintemp_f": 53,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 62
+  },
+  "Galveston": {
+    "country": "United States of America",
+    "city": "Galveston",
+    "avr_maxtemp_c": 20,
+    "avr_maxtemp_f": 68,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 64,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 66
+  },
+  "Killeen": {
+    "country": "United States of America",
+    "city": "Killeen",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 55,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 63
+  },
+  "Irving": {
+    "country": "United States of America",
+    "city": "Irving",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 14,
+    "avr_mintemp_f": 57,
+    "avr_avgtemp_c": 18,
+    "avr_avgtemp_f": 65
+  },
+  "Montreal": {
+    "country": "Canada",
+    "city": "Montreal",
+    "avr_maxtemp_c": 1,
+    "avr_maxtemp_f": 34,
+    "avr_mintemp_c": -4,
+    "avr_mintemp_f": 26,
+    "avr_avgtemp_c": -1,
+    "avr_avgtemp_f": 31
+  },
+  "Calgary": {
+    "country": "Canada",
+    "city": "Calgary",
+    "avr_maxtemp_c": 8,
+    "avr_maxtemp_f": 47,
+    "avr_mintemp_c": 0,
+    "avr_mintemp_f": 32,
+    "avr_avgtemp_c": 4,
+    "avr_avgtemp_f": 39
+  },
+  "Ottawa": {
+    "country": "Canada",
+    "city": "Ottawa",
+    "avr_maxtemp_c": 3,
+    "avr_maxtemp_f": 37,
+    "avr_mintemp_c": -3,
+    "avr_mintemp_f": 27,
+    "avr_avgtemp_c": 0,
+    "avr_avgtemp_f": 32
+  },
+  "Hamilton": {
+    "country": "Canada",
+    "city": "Hamilton",
+    "avr_maxtemp_c": 5,
+    "avr_maxtemp_f": 41,
+    "avr_mintemp_c": 0,
+    "avr_mintemp_f": 33,
+    "avr_avgtemp_c": 3,
+    "avr_avgtemp_f": 37
+  },
+  "Mumbai": {
+    "country": "India",
+    "city": "Mumbai",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 78,
+    "avr_mintemp_c": 21,
+    "avr_mintemp_f": 69,
+    "avr_avgtemp_c": 23,
+    "avr_avgtemp_f": 74
+  },
+  "Bangalore": {
+    "country": "India",
+    "city": "Bangalore",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 77,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 67,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 71
+  },
+  "Hyderabad": {
+    "country": "India",
+    "city": "Hyderabad",
+    "avr_maxtemp_c": 28,
+    "avr_maxtemp_f": 82,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 67,
+    "avr_avgtemp_c": 23,
+    "avr_avgtemp_f": 73
+  },
+  "Surat": {
+    "country": "India",
+    "city": "Surat",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 20,
+    "avr_mintemp_f": 67,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 71
+  },
+  "Indore": {
+    "country": "India",
+    "city": "Indore",
+    "avr_maxtemp_c": 21,
+    "avr_maxtemp_f": 70,
+    "avr_mintemp_c": 14,
+    "avr_mintemp_f": 56,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 63
+  },
+  "Bhopal": {
+    "country": "India",
+    "city": "Bhopal",
+    "avr_maxtemp_c": 23,
+    "avr_maxtemp_f": 73,
+    "avr_mintemp_c": 15,
+    "avr_mintemp_f": 59,
+    "avr_avgtemp_c": 18,
+    "avr_avgtemp_f": 65
+  },
+  "Patna": {
+    "country": "India",
+    "city": "Patna",
+    "avr_maxtemp_c": 30,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Ghaziabad": {
+    "country": "India",
+    "city": "Ghaziabad",
+    "avr_maxtemp_c": 26,
+    "avr_maxtemp_f": 79,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 64,
+    "avr_avgtemp_c": 21,
+    "avr_avgtemp_f": 70
+  },
+  "Agra": {
+    "country": "India",
+    "city": "Agra",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 75,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 20,
+    "avr_avgtemp_f": 68
+  },
+  "Rajkot": {
+    "country": "India",
+    "city": "Rajkot",
+    "avr_maxtemp_c": 28,
+    "avr_maxtemp_f": 82,
+    "avr_mintemp_c": 20,
+    "avr_mintemp_f": 67,
+    "avr_avgtemp_c": 23,
+    "avr_avgtemp_f": 74
+  },
+  "Meerut": {
+    "country": "India",
+    "city": "Meerut",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 77,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 60,
+    "avr_avgtemp_c": 20,
+    "avr_avgtemp_f": 67
+  },
+  "Allahabad": {
+    "country": "India",
+    "city": "Allahabad",
+    "avr_maxtemp_c": 29,
+    "avr_maxtemp_f": 83,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 21,
+    "avr_avgtemp_f": 70
+  },
+  "Ranchi": {
+    "country": "India",
+    "city": "Ranchi",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 77,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 55,
+    "avr_avgtemp_c": 18,
+    "avr_avgtemp_f": 65
+  },
+  "Jabalpur": {
+    "country": "India",
+    "city": "Jabalpur",
+    "avr_maxtemp_c": 27,
+    "avr_maxtemp_f": 80,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 56,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 65
+  },
+  "Jodhpur": {
+    "country": "India",
+    "city": "Jodhpur",
+    "avr_maxtemp_c": 28,
+    "avr_maxtemp_f": 83,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 65,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Madurai": {
+    "country": "India",
+    "city": "Madurai",
+    "avr_maxtemp_c": 30,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 23,
+    "avr_mintemp_f": 73,
+    "avr_avgtemp_c": 26,
+    "avr_avgtemp_f": 78
+  },
+  "Raipur": {
+    "country": "India",
+    "city": "Raipur",
+    "avr_maxtemp_c": 30,
+    "avr_maxtemp_f": 86,
+    "avr_mintemp_c": 15,
+    "avr_mintemp_f": 59,
+    "avr_avgtemp_c": 21,
+    "avr_avgtemp_f": 71
+  },
+  "Kota Bharu": {
+    "country": "Malaysia",
+    "city": "Kota Bharu",
+    "avr_maxtemp_c": 27,
+    "avr_maxtemp_f": 81,
+    "avr_mintemp_c": 24,
+    "avr_mintemp_f": 74,
+    "avr_avgtemp_c": 25,
+    "avr_avgtemp_f": 77
+  },
+  "Guwahati": {
+    "country": "India",
+    "city": "Guwahati",
+    "avr_maxtemp_c": 30,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 14,
+    "avr_mintemp_f": 58,
+    "avr_avgtemp_c": 20,
+    "avr_avgtemp_f": 69
+  },
+  "Solapur": {
+    "country": "India",
+    "city": "Solapur",
+    "avr_maxtemp_c": 27,
+    "avr_maxtemp_f": 80,
+    "avr_mintemp_c": 21,
+    "avr_mintemp_f": 69,
+    "avr_avgtemp_c": 24,
+    "avr_avgtemp_f": 75
+  },
+  "Bareilly": {
+    "country": "India",
+    "city": "Bareilly",
+    "avr_maxtemp_c": 23,
+    "avr_maxtemp_f": 73,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 60,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 66
+  },
+  "Moradabad": {
+    "country": "India",
+    "city": "Moradabad",
+    "avr_maxtemp_c": 24,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 15,
+    "avr_mintemp_f": 59,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 67
+  },
+  "Gurgaon": {
+    "country": "India",
+    "city": "Gurgaon",
+    "avr_maxtemp_c": 26,
+    "avr_maxtemp_f": 79,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 65,
+    "avr_avgtemp_c": 21,
+    "avr_avgtemp_f": 70
+  },
+  "Aligarh": {
+    "country": "India",
+    "city": "Aligarh",
+    "avr_maxtemp_c": 23,
+    "avr_maxtemp_f": 74,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 67
+  },
+  "Jalandhar": {
+    "country": "India",
+    "city": "Jalandhar",
+    "avr_maxtemp_c": 26,
+    "avr_maxtemp_f": 78,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 56,
+    "avr_avgtemp_c": 18,
+    "avr_avgtemp_f": 65
+  },
+  "Tiruchirappalli": {
+    "country": "India",
+    "city": "Tiruchirappalli",
+    "avr_maxtemp_c": 29,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 22,
+    "avr_mintemp_f": 72,
+    "avr_avgtemp_c": 25,
+    "avr_avgtemp_f": 77
+  },
+  "Salem": {
+    "country": "India",
+    "city": "Salem",
+    "avr_maxtemp_c": 29,
+    "avr_maxtemp_f": 84,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 67,
+    "avr_avgtemp_c": 23,
+    "avr_avgtemp_f": 74
+  },
+  "Bhiwandi": {
+    "country": "India",
+    "city": "Bhiwandi",
+    "avr_maxtemp_c": 26,
+    "avr_maxtemp_f": 78,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 66,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Saharanpur": {
+    "country": "India",
+    "city": "Saharanpur",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 14,
+    "avr_mintemp_f": 57,
+    "avr_avgtemp_c": 18,
+    "avr_avgtemp_f": 65
+  },
+  "Durgapur": {
+    "country": "India",
+    "city": "Durgapur",
+    "avr_maxtemp_c": 31,
+    "avr_maxtemp_f": 88,
+    "avr_mintemp_c": 17,
+    "avr_mintemp_f": 63,
+    "avr_avgtemp_c": 23,
+    "avr_avgtemp_f": 73
+  },
+  "Asansol": {
+    "country": "India",
+    "city": "Asansol",
+    "avr_maxtemp_c": 31,
+    "avr_maxtemp_f": 87,
+    "avr_mintemp_c": 17,
+    "avr_mintemp_f": 62,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 72
+  },
+  "Ajmer": {
+    "country": "India",
+    "city": "Ajmer",
+    "avr_maxtemp_c": 23,
+    "avr_maxtemp_f": 73,
+    "avr_mintemp_c": 16,
+    "avr_mintemp_f": 61,
+    "avr_avgtemp_c": 19,
+    "avr_avgtemp_f": 66
+  },
+  "Jamnagar": {
+    "country": "India",
+    "city": "Jamnagar",
+    "avr_maxtemp_c": 29,
+    "avr_maxtemp_f": 84,
+    "avr_mintemp_c": 21,
+    "avr_mintemp_f": 69,
+    "avr_avgtemp_c": 25,
+    "avr_avgtemp_f": 76
+  },
+  "Ujjain": {
+    "country": "India",
+    "city": "Ujjain",
+    "avr_maxtemp_c": 21,
+    "avr_maxtemp_f": 70,
+    "avr_mintemp_c": 13,
+    "avr_mintemp_f": 56,
+    "avr_avgtemp_c": 17,
+    "avr_avgtemp_f": 62
+  },
+  "Norway": {
+    "country": "Norway",
+    "city": "Oslo",
+    "avr_maxtemp_c": -5,
+    "avr_maxtemp_f": 22,
+    "avr_mintemp_c": -9,
+    "avr_mintemp_f": 16,
+    "avr_avgtemp_c": -7,
+    "avr_avgtemp_f": 19
+  },
+  "Pakistan": {
+    "country": "Pakistan",
+    "city": "Islamabad",
+    "avr_maxtemp_c": 25,
+    "avr_maxtemp_f": 76,
+    "avr_mintemp_c": 11,
+    "avr_mintemp_f": 51,
+    "avr_avgtemp_c": 16,
+    "avr_avgtemp_f": 61
+  },
+  "United States of America": {
+    "country": "United States of America",
+    "city": "Washington",
+    "avr_maxtemp_c": 14,
+    "avr_maxtemp_f": 56,
+    "avr_mintemp_c": 4,
+    "avr_mintemp_f": 39,
+    "avr_avgtemp_c": 8,
+    "avr_avgtemp_f": 47
+  },
+  "Canada": {
+    "country": "Canada",
+    "city": "Ottawa",
+    "avr_maxtemp_c": 3,
+    "avr_maxtemp_f": 37,
+    "avr_mintemp_c": -3,
+    "avr_mintemp_f": 27,
+    "avr_avgtemp_c": 0,
+    "avr_avgtemp_f": 32
+  },
+  "Bangladesh": {
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "avr_maxtemp_c": 32,
+    "avr_maxtemp_f": 90,
+    "avr_mintemp_c": 19,
+    "avr_mintemp_f": 66,
+    "avr_avgtemp_c": 25,
+    "avr_avgtemp_f": 76
+  },
+  "Uganda": {
+    "country": "Uganda",
+    "city": "Kampala",
+    "avr_maxtemp_c": 29,
+    "avr_maxtemp_f": 85,
+    "avr_mintemp_c": 18,
+    "avr_mintemp_f": 64,
+    "avr_avgtemp_c": 22,
+    "avr_avgtemp_f": 71
+  }
+}
