@@ -37,8 +37,13 @@ const apiRequestLimiter = rateLimit({
 });
 
 
+const capitalize = (s) => {
+    if (typeof s !== 'string') return ''
+    return s.charAt(0).toUpperCase() + s.slice(1)
+  }
+
 //home route
-app.get('/all/:country/:city', function (req, res) {
+app.get('/all/:country/:city', apiRequestLimiter, function (req, res) {
 
 
     var fs = require('fs');
@@ -50,14 +55,14 @@ app.get('/all/:country/:city', function (req, res) {
     console.log(words["Toronto"]["country"]);
     console.log(words["Toronto"]["city"]);
 
-    findcity = req.params.city.toLowerCase();
-    fcountry = req.params.country.toLowerCase();
+    findcity = capitalize(req.params.city);
+    fcountry = capitalize(req.params.country);
 
     
 
     if (words[findcity] != null) {
         console.log("Exist");
-        if (fcountry == words[findcity]["country"].toLowerCase() && findcity == words[findcity]["city"].toLowerCase()) {
+        if (fcountry == words[findcity]["country"] && findcity == words[findcity]["city"]) {
             console.log("check");
             console.log(fcountry, findcity);
         }
@@ -260,7 +265,7 @@ app.get('/all/:country/:city', function (req, res) {
 
 
 //Dynamic Route
-app.get('/all/:country', function (req, res) {
+app.get('/all/:country', apiRequestLimiter, function (req, res) {
     var fs = require('fs');
     var savedData = fs.readFileSync('data.json');
 
@@ -270,7 +275,7 @@ app.get('/all/:country', function (req, res) {
     console.log(words["Toronto"]["country"]);
     console.log(words["Toronto"]["city"]);
 
-    findcity = req.params.country;
+    findcity = capitalize(req.params.country);
     //fcountry = req.params.country;
 
     if (words[findcity] != null) {
@@ -278,7 +283,7 @@ app.get('/all/:country', function (req, res) {
         if (findcity == words[findcity]["country"]) {
             console.log("check");
             console.log(findcity);
-            res.render('hotel', { city: findcity, country: words[findcity]["country"], avr_maxtemp_c: words[findcity]["avr_maxtemp_c"], avr_maxtemp_f: words[findcity]["avr_maxtemp_f"], avr_mintemp_c: words[findcity]["avr_mintemp_c"], avr_mintemp_f: words[findcity]["avr_mintemp_f"], avr_avgtemp_c: words[findcity]["avr_avgtemp_c"], avr_avgtemp_f: words[findcity]["avr_avgtemp_f"] });
+            res.render('hotel', { city: words[findcity]["city"], country: words[findcity]["country"], avr_maxtemp_c: words[findcity]["avr_maxtemp_c"], avr_maxtemp_f: words[findcity]["avr_maxtemp_f"], avr_mintemp_c: words[findcity]["avr_mintemp_c"], avr_mintemp_f: words[findcity]["avr_mintemp_f"], avr_avgtemp_c: words[findcity]["avr_avgtemp_c"], avr_avgtemp_f: words[findcity]["avr_avgtemp_f"] });
      
         }
         else {
