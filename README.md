@@ -1,4 +1,4 @@
-# ExpressJS_Assigonment
+# ExpressJS_Assignment
 
 For this assignment hotel.pug is my main frontend .pug file. In hotel.pug celsius and fahrenheit toggle work done by basic javascript and the code is added below of the page.
 
