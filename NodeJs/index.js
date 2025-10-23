@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2025 sakib-maho
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+
 const express = require('express');
 const path = require('path');
 const request = require('request');

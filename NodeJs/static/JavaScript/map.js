@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2025 sakib-maho
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+
 function CenterControl(controlDiv, map) {
   // Set CSS for the control border.
   const controlUI = document.createElement("div");

@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2025 sakib-maho
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+
 var rangeSlider = document.getElementById("rs-range-line");
 var rangeBullet = document.getElementById("rs-bullet");
 

@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2025 sakib-maho
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+
 function hideHotel() {
     var x = document.getElementById("hotel");
     var y = document.getElementById("map");

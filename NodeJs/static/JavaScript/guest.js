@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2025 sakib-maho
+ * Licensed under the MIT License
+ * See LICENSE file for details
+ */
+
 function increment() {
     let value = Number(document.getElementById("guests_no").innerHTML);
 
